@@ -31,7 +31,7 @@ Some of the foundational models/base models: GPT, BLOOM, BERT, LLaMa, FLAN-T5, P
 
 ## Transformers Architecture
 
-![Transformer Architecture](./images/transformer-diagram.png)
+![Transformer Architecture](./images/transformer_architecture.png)
 
 ### 1. Revolutionary Improvement Over Previous Models
 - Transformers dramatically improved natural language processing compared to older RNNs (Recurrent Neural Networks)
