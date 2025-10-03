@@ -173,3 +173,128 @@
 - **Prompt Engineering**: Crafting effective prompts with examples
 - **Inference Configuration**: Fine-tuning output behavior and creativity
 - **Next Step**: Building and launching LLM-powered applications
+
+## Generative AI Project Lifecycle
+
+![Generative AI Project Lifecycle](./images/GenAI_project_life_cycle.png)
+
+### Overview
+A comprehensive framework that maps out tasks required to take your project from conception to launch, covering all stages of LLM-powered application development.
+
+### Stage 1: Scope Definition
+**Most Important Step**: Define scope as accurately and narrowly as possible
+
+#### Key Questions:
+- **Function**: What will the LLM do in your specific application?
+- **Capability Level**: 
+  - Multi-task with long-form text generation and high capability?
+  - Specific task like named entity recognition (good at one thing)?
+- **Requirements**: Be specific about model needs
+
+#### Benefits:
+- **Time Savings**: Clear scope prevents unnecessary work
+- **Cost Efficiency**: Reduces compute costs significantly
+- **Focus**: Guides all subsequent decisions
+
+### Stage 2: Model Selection
+**Decision**: Train from scratch vs. use existing base model
+
+#### Default Approach: Start with Existing Model
+- **Recommendation**: Generally start with existing base model
+- **Efficiency**: Faster and more cost-effective
+- **Availability**: Many high-quality models available
+
+#### Train from Scratch (Special Cases)
+- **When**: Very specific requirements or unique domains
+- **Considerations**: Requires significant resources and expertise
+- **Rules of Thumb**: Will be covered later in the week
+
+### Stage 3: Adapt and Align
+**Purpose**: Assess performance and carry out additional training if needed
+
+#### Step 3a: Prompt Engineering
+- **Start Here**: Try in-context learning first
+- **Method**: Use examples suited to your task and use case
+- **Often Sufficient**: May be enough to achieve desired performance
+
+#### Step 3b: Fine-Tuning (If Needed)
+- **When**: Model doesn't perform well enough with prompt engineering
+- **Method**: Supervised learning process
+- **Coverage**: Detailed in Week 2 with hands-on lab
+
+#### Step 3c: Reinforcement Learning with Human Feedback (RLHF)
+- **Purpose**: Ensure model behaves well and aligns with human preferences
+- **Importance**: Increasingly critical as models become more capable
+- **Coverage**: Week 3 content
+
+#### Evaluation Throughout
+- **Metrics**: Various benchmarks to measure performance
+- **Alignment**: Check how well model aligns with preferences
+- **Coverage**: Explored in Week 2
+
+#### Iterative Nature
+- **Process**: Highly iterative development cycle
+- **Example Flow**: 
+  1. Try prompt engineering → evaluate
+  2. Use fine-tuning → improve performance
+  3. Revisit prompt engineering → final optimization
+- **Goal**: Achieve required performance levels
+
+### Stage 4: Deploy
+**Purpose**: Integrate model into infrastructure and application
+
+#### Deployment Optimization
+- **Objective**: Optimize model for deployment
+- **Benefits**: 
+  - Best use of compute resources
+  - Optimal user experience
+- **Techniques**: Model compression, quantization, etc.
+
+#### Infrastructure Integration
+- **Application Integration**: Connect model with existing systems
+- **Performance Monitoring**: Track model behavior in production
+- **Scaling**: Ensure system can handle user load
+
+### Stage 5: Additional Infrastructure
+**Purpose**: Address fundamental LLM limitations through external systems
+
+#### Common LLM Limitations:
+- **Hallucination**: Tendency to invent information when unsure
+- **Reasoning**: Limited ability for complex reasoning and mathematics
+- **Knowledge Cutoff**: Limited to training data timeframe
+
+#### Solutions (Course Part 3):
+- **External Tools**: Integration with databases, APIs, calculators
+- **Retrieval Systems**: Access to up-to-date information
+- **Reasoning Frameworks**: Chain-of-thought and other techniques
+- **Verification Systems**: Fact-checking and validation
+
+### Key Principles
+
+#### 1. Iterative Development
+- **Nature**: Each stage can involve multiple iterations
+- **Flexibility**: Move between stages as needed
+- **Optimization**: Continuous improvement throughout lifecycle
+
+#### 2. Cost Consciousness
+- **Early Decisions**: Scope definition impacts all costs
+- **Resource Planning**: Consider compute requirements at each stage
+- **Optimization**: Balance performance with resource constraints
+
+#### 3. Evaluation-Driven
+- **Continuous Assessment**: Evaluate at every stage
+- **Data-Driven Decisions**: Use metrics to guide choices
+- **Performance Tracking**: Monitor improvements throughout process
+
+#### 4. Infrastructure Considerations
+- **Early Planning**: Consider deployment needs early
+- **Scalability**: Plan for growth and increased usage
+- **Integration**: Think about how model fits into larger system
+
+### Course Mapping
+- **Week 1**: Scope definition, model selection basics
+- **Week 2**: Fine-tuning, evaluation metrics and benchmarks
+- **Week 3**: RLHF, deployment optimization
+- **Final Part**: Additional infrastructure and LLM limitations
+
+This lifecycle framework will be referenced throughout the course as you explore each stage in detail.
